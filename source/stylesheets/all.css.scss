@@ -1,0 +1,57 @@
+body {
+  background: image-url("background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;  
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  margin-top: 100px;
+  font-weight: 300;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 60px;  
+  font-size: 1.0em;
+}
+
+i {
+  font-weight: normal;
+  -webkit-text-stroke: 1px background-color;
+}
+
+.email:before {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 15px;
+  top: 30px;
+  display: block;
+  content: " ";
+  background: image-url('email.png') center center no-repeat;
+}
+
+input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(187, 187, 187, .5);
+    max-width: 460px;
+    margin: 15px auto;
+    line-height: 54px;
+    position: relative;
+    padding-left: 35px;
+    padding-right: 27px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 21px;
+    color: #ffffff;
+  }
