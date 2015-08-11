@@ -53,6 +53,11 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket = 'mailed.cf'
+  s3_sync.region = 'eu-west-1'
+end
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
@@ -70,3 +75,5 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+

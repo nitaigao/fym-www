@@ -19,40 +19,40 @@ ul {
 
 ul li span {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 100;
   line-height: 60px;  
-  font-size: 0.90 em;
+  font-size: 24px;
+  vertical-align: middle;
+  margin-left: 5px;
 }
 
-i {
-  font-weight: normal;
-  -webkit-text-stroke: 1px background-color;
+.email {
+  margin-top: 40px;
 }
 
-.email:before {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  left: 15px;
-  top: 30px;
-  display: block;
-  content: " ";
-  background: image-url('email.png') center center no-repeat;
+input[type=email] {
+  margin-left: -30px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(187, 187, 187, .5);
+  line-height: 54px;
+  padding-left: 35px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 21px;
+
+  color: #ffffff;
+  min-width: 500px;
+  vertical-align: middle;
 }
 
-input {
-    background: none;
-    border: none;
-    border-bottom: 1px solid rgba(187, 187, 187, .5);
-    max-width: 460px;
-    margin: 15px auto;
-    line-height: 54px;
-    position: relative;
-    padding-left: 35px;
-    padding-right: 27px;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 21px;
-    color: #ffffff;
-  }
+input[type=submit] {
+  border: 1px solid #6abcc2;
+  border-bottom: 4px solid #6abcc2;
+  background-color: #7ED0D6;
+  border-radius: 5px;
+  vertical-align: bottom;
+  margin-left: 10px;
+  width:100px;
+  height: 40px;
+}

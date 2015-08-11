@@ -1,5 +1,5 @@
 ---
-title: Mailed.app
+title: Free Your Mail Box
 ---
 
 .container
@@ -10,15 +10,21 @@ title: Mailed.app
     .col-md-6.col-md-offset-2
       %ul
         %li 
-          %i.fa.fa-check-square-o.fa-2x.point
-            %span Protect your identity
+          %i.pe-7s-check.pe-2x.pw-fw.pe-va.icon
+          %span Protect your identity
         %li 
-          %i.fa.fa-check-square-o.icon-large.fa-2x.point 
-            %span Pause a mailing list
+          %i.pe-7s-check.pe-2x.pw-fw.pe-va
+          %span Forget unsubscribe links
         %li 
-          %i.fa.fa-check-square-o.icon-large.fa-2x.point
-            %span Forget unsubscribe links
+          %i.pe-7s-check.pe-2x.pw-fw.pe-va
+          %span Take control of mailing lists
   .row
-    .col-md-10.col-md-offset-2
-      %span.email
-        %input{type: "text", placeholder: "Your best email"}
+    .col-md-10.col-md-offset-2.email
+      %span
+        %form{:action => "//formspree.io/sf8s7dfa8@north.lc", :method => "POST"}
+          %span.pe-7s-mail.pe-2x.pw-fw.pe-va
+          %input{:type => "text", :name => "_gotcha", :style => "display:none"}
+          %input{:type => "hidden", :name => "_next", :value => "//mailed.cf"}
+          %input{:name => "email", :type => "email", :placeholder => "Your best email"}
+          %input{:type => "submit", :value => "Sign Up"}
+
