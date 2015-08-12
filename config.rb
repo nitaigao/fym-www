@@ -54,7 +54,7 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
 activate :s3_sync do |s3_sync|
-  s3_sync.bucket = 'mailed.cf'
+  s3_sync.bucket = 'freeyourmailbox.ml'
   s3_sync.region = 'eu-west-1'
 end
 
